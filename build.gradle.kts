@@ -10,6 +10,8 @@ dependencies {
     testImplementation("org.junit.platform:junit-platform-suite")
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.assertj:assertj-core:3.24.2")
+
+    implementation("io.cucumber:cucumber-picocontainer:4.8.1")
 }
 
 repositories {
