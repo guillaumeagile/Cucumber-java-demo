@@ -11,7 +11,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.assertj:assertj-core:3.24.2")
 
-    implementation("io.cucumber:cucumber-picocontainer:4.8.1")
+    implementation("io.cucumber:cucumber-picocontainer:7.11.1")
 }
 
 repositories {
