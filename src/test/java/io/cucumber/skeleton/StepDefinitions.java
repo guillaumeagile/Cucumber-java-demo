@@ -21,8 +21,8 @@ public class StepDefinitions {
     @Given("j'additionne {int} à {int}")
     public void additionner(int premierOperande, int deuxiemeOperande) {
 
-       var calcul = new Calcul();
-       this.testContext.resultat = calcul.additionner(premierOperande, deuxiemeOperande);
+       var calcul = new Calculateur();
+       this.testContext.resultat = calcul.addition(premierOperande, deuxiemeOperande);
     }
 
     @Then("le résultat est égal à {int}")

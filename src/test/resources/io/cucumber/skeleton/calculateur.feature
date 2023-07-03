@@ -5,11 +5,15 @@ Feature: Calculateur
     Then le résultat est égal à 6
 
 
-  Scenario: additionne 0 et 100
-    Given j'additionne 0 à 100
-    Then le résultat est égal à 100
 
 
-  Scenario: additionne 0 et 100
-    Given j'additionne 0 à -100
-    Then le résultat est égal à 100
+
+    #Scenario Outline: test paramétré
+      # les même steps
+     # Given j'additionne <ope1> à <ope2>
+     # Then le résultat est égal à <res>
+
+  #    Examples:
+   #     | ope1  | ope2 | res |
+   #     |    12 |   5 |   17 |
+   #     |    20 |   5 |   25 |
