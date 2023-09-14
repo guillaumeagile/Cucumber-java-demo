@@ -24,4 +24,13 @@ tasks.withType<Test> {
     // Work around. Gradle does not include enough information to disambiguate
     // between different examples and scenarios.
     systemProperty("cucumber.junit-platform.naming-strategy", "long")
+    testLogging {
+        events ("passed", "skipped", "failed")
+        testLogging.showStandardStreams = true
+    }
 }
+
+tasks.named<Wrapper>("wrapper") {
+    distributionType = Wrapper.DistributionType.ALL
+}
+
